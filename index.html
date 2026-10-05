@@ -1,0 +1,360 @@
+<!doctype html>
+<html lang="tr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Kalk, Geldik! — Durak alarmı: otobüste, metroda uyuyakalma</title>
+<meta name="description" content="Kalk, Geldik! konuma göre çalan durak alarmı: otobüste, metroda, metrobüste ve vapurda uyuyakalsan da durağına gelince seni uyandırır — telefon sessizde ve kilitliyken bile. Ücretsiz, hesap gerekmez.">
+<link rel="canonical" href="https://kalkgeldik.com/">
+<meta name="theme-color" content="#FF5A36">
+<link rel="icon" type="image/png" sizes="32x32" href="assets/img/favicon-32.png">
+<link rel="icon" type="image/png" sizes="64x64" href="assets/img/favicon-64.png">
+<link rel="apple-touch-icon" href="assets/img/apple-touch-icon.png">
+<meta property="og:type" content="website">
+<meta property="og:title" content="Kalk, Geldik! — Durağına gelince uyandıran alarm">
+<meta property="og:url" content="https://kalkgeldik.com/">
+<meta property="og:site_name" content="Kalk, Geldik!">
+<meta property="og:description" content="Sen uyu, durağına gelince biz uyandıralım. Sessiz modda ve kilit ekranında bile çalan konum alarmı.">
+<meta property="og:image" content="https://kalkgeldik.com/assets/img/og.png">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:image:alt" content="Kalk, Geldik! — Sen uyu, durağına gelince biz uyandıralım.">
+<meta name="twitter:image" content="https://kalkgeldik.com/assets/img/og.png">
+<meta property="og:locale" content="tr_TR">
+<meta name="twitter:card" content="summary_large_image">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="assets/css/style.css">
+<script type="application/ld+json">
+{
+ "@context": "https://schema.org",
+ "@type": "MobileApplication",
+ "name": "Kalk, Geldik!",
+ "alternateName": [
+  "Kalk Geldik",
+  "KalkGeldik"
+ ],
+ "description": "Konuma göre çalan durak alarmı. Otobüste, metroda, vapurda uyuyakalsan da hedefine gelince seni uyandırır; telefon sessizde ve kilitliyken bile çalar.",
+ "operatingSystem": "iOS",
+ "applicationCategory": "TravelApplication",
+ "inLanguage": "tr",
+ "offers": {
+  "@type": "Offer",
+  "price": "0",
+  "priceCurrency": "TRY"
+ },
+ "url": "https://kalkgeldik.com/",
+ "image": "https://kalkgeldik.com/assets/img/icon-512.png",
+ "screenshot": "https://kalkgeldik.com/assets/img/screens/harita.webp",
+ "author": {
+  "@type": "Organization",
+  "name": "Kalk, Geldik!",
+  "url": "https://kalkgeldik.com/",
+  "email": "info@kalkgeldik.com"
+ }
+}
+</script>
+<script type="application/ld+json">
+{
+ "@context": "https://schema.org",
+ "@type": "WebSite",
+ "name": "Kalk, Geldik!",
+ "alternateName": "Kalk Geldik",
+ "url": "https://kalkgeldik.com/",
+ "inLanguage": "tr"
+}
+</script>
+<script type="application/ld+json">
+{
+ "@context": "https://schema.org",
+ "@type": "FAQPage",
+ "mainEntity": [
+  {
+   "@type": "Question",
+   "name": "Telefon sessizdeyken alarm çalar mı?",
+   "acceptedAnswer": {
+    "@type": "Answer",
+    "text": "Evet. iOS 26.1 ve sonrasında alarm, saat uygulamasındaki alarmlar gibi sistem alarmı olarak çalar; sessiz anahtarı ve Odak modları onu engellemez. Daha eski iOS sürümlerinde uygulama alarm sesini kendisi çalar ve bildirim gönderir."
+   }
+  },
+  {
+   "@type": "Question",
+   "name": "Uygulamayı açık tutmam gerekiyor mu?",
+   "acceptedAnswer": {
+    "@type": "Answer",
+    "text": "Hayır. Alarmı kurduktan sonra telefonu kilitleyebilirsin. Uygulamayı uygulama değiştiriciden yukarı kaydırıp kapatma; iOS'un arka planda konumu iletebilmesi için uygulamanın arka planda kalması gerekir."
+   }
+  },
+  {
+   "@type": "Question",
+   "name": "Neden \"Her Zaman\" konum izni istiyor?",
+   "acceptedAnswer": {
+    "@type": "Answer",
+    "text": "Ekran kilitliyken ve uygulama arka plandayken hedefe vardığını anlayabilmek için. Konum yalnızca aktif bir alarm varken kullanılır ve telefonundan dışarı çıkmaz."
+   }
+  },
+  {
+   "@type": "Question",
+   "name": "Pili çok tüketir mi?",
+   "acceptedAnswer": {
+    "@type": "Answer",
+    "text": "Hedefe uzakken konum seyrek alınır, yaklaştıkça sıklaşır. Alarm bitince takip tamamen durur. Uzun yolculuklarda yine de telefonunun şarjlı olmasını öneririz."
+   }
+  },
+  {
+   "@type": "Question",
+   "name": "Metroda, tünelde çalışır mı?",
+   "acceptedAnswer": {
+    "@type": "Answer",
+    "text": "Konum, GPS ve çevredeki Wi-Fi/baz istasyonlarından alınır. Tünellerde konum gecikebilir; bu yüzden metroda alarm alanını biraz daha büyük (ör. 1 km) seçmeni öneririz."
+   }
+  },
+  {
+   "@type": "Question",
+   "name": "Ücretli mi?",
+   "acceptedAnswer": {
+    "@type": "Answer",
+    "text": "Hayır, Kalk, Geldik! ücretsiz. Hesap açman da gerekmiyor."
+   }
+  }
+ ]
+}
+</script>
+</head>
+<body>
+<a class="skip" href="#ana">İçeriğe geç</a>
+
+<!-- Ortak ikonlar (uygulamadakiyle aynı çizimler) -->
+<svg width="0" height="0" style="position:absolute" aria-hidden="true">
+  <defs>
+    <symbol id="i-logo" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 20.6 C12 20.6 6.8 15.4 6.8 11.4 A5.2 5.2 0 0 1 17.2 11.4 C17.2 15.4 12 20.6 12 20.6 Z"/><circle cx="12" cy="11.4" r="1.9"/><path d="M3.6 8.2 A9.5 9.5 0 0 1 6.4 4.2"/><path d="M20.4 8.2 A9.5 9.5 0 0 0 17.6 4.2"/></symbol>
+    <symbol id="i-pin" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 21.2 C12 21.2 5 14.6 5 9.6 A7 7 0 0 1 19 9.6 C19 14.6 12 21.2 12 21.2 Z"/><circle cx="12" cy="9.6" r="2.5"/></symbol>
+    <symbol id="i-lock" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="5" y="10.4" width="14" height="10.2" rx="2.6"/><path d="M8.2 10.4 V7.6 A3.8 3.8 0 0 1 15.8 7.6 V10.4"/><path d="M12 14.4 V16.6"/></symbol>
+    <symbol id="i-bell" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M6.2 16.8 V11.2 A5.8 5.8 0 0 1 17.8 11.2 V16.8 L19.4 18.4 H4.6 Z"/><path d="M10 21 A2.1 2.1 0 0 0 14 21"/><path d="M12 3.4 V5.4"/></symbol>
+    <symbol id="i-alarm" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="13" r="7"/><path d="M12 9.5 V13 L14.5 14.6"/><path d="M4.2 6.6 L6.8 4"/><path d="M19.8 6.6 L17.2 4"/><path d="M7.6 19.2 L6.2 21"/><path d="M16.4 19.2 L17.8 21"/></symbol>
+    <symbol id="i-star" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3.6 L14.41 9.28 L20.56 9.82 L15.9 13.87 L17.29 19.88 L12 16.7 L6.71 19.88 L8.1 13.87 L3.44 9.82 L9.59 9.28 Z"/></symbol>
+    <symbol id="i-history" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4.3 13.5 A8 8 0 1 0 6.6 6.6"/><path d="M4 4.2 V8.2 H8"/><path d="M12 8.2 V12.4 L15 14.2"/></symbol>
+    <symbol id="i-sleep" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M19.6 14.6 A8 8 0 1 1 9.4 4.4 A6.4 6.4 0 0 0 19.6 14.6 Z"/><path d="M14.6 3.6 H18.4 L14.6 8 H18.4"/></symbol>
+    <symbol id="i-bus" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="4.5" y="3.5" width="15" height="14.5" rx="3"/><path d="M4.5 11 H19.5"/><path d="M7.5 18 V20.5 M16.5 18 V20.5"/><circle cx="8.2" cy="14.6" r=".9" fill="currentColor"/><circle cx="15.8" cy="14.6" r=".9" fill="currentColor"/></symbol>
+    <symbol id="i-check" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12.6 L9.8 17.2 L19 7.4"/></symbol>
+    <symbol id="i-shield" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2.8 L19.5 5.6 V11.4 C19.5 16 16.3 19.6 12 21.2 C7.7 19.6 4.5 16 4.5 11.4 V5.6 Z"/><path d="M8.6 12 L11 14.4 L15.6 9.6"/></symbol>
+    <symbol id="i-phone" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="6.5" y="2.5" width="11" height="19" rx="2.6"/><path d="M10.5 18.5 H13.5"/></symbol>
+    <symbol id="i-play" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M6.5 3.8 L19.2 12 L6.5 20.2 Z"/></symbol>
+  </defs>
+</svg>
+
+<header class="site-header">
+  <div class="wrap">
+    <a class="brand" href="./"><img src="assets/img/icon-256.png" alt="" width="34" height="34">Kalk, Geldik!</a>
+    <button class="menu-btn" aria-label="Menü" aria-expanded="false" aria-controls="nav">
+      <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M4 7h16M4 12h16M4 17h16"/></svg>
+    </button>
+    <nav class="nav" id="nav">
+      <a href="#nasil">Nasıl çalışır</a>
+      <a href="#ozellikler">Özellikler</a>
+      <a href="#sss">SSS</a>
+      <a href="destek.html">Destek</a>
+      <a class="btn small" href="#indir">İndir</a>
+    </nav>
+  </div>
+</header>
+
+<main id="ana">
+  <!-- HERO -->
+  <section class="hero">
+    <div class="wrap">
+      <div>
+        <span class="eyebrow"><svg width="16" height="16"><use href="#i-sleep"/></svg>Toplu taşımada gönül rahatlığıyla uyu</span>
+        <h1>Sen uyu,<br><span class="accent">durağına gelince</span><br>biz uyandıralım.</h1>
+        <p class="lead">Gideceğin yeri haritada seç, telefonu kilitle. Hedefe vardığın anda <strong>Kalk, Geldik!</strong> çalar — telefon sessizdeyken bile.</p>
+        <div class="cta-row">
+          <a class="btn store-btn dark" href="#indir">
+            <svg><use href="#i-phone"/></svg>
+            <span class="lines"><small>Çok yakında</small><span>App Store'da</span></span>
+          </a>
+          <a class="btn store-btn dark" href="#indir" aria-disabled="true">
+            <svg><use href="#i-play"/></svg>
+            <span class="lines"><small>Çok yakında</small><span>Google Play'de</span></span>
+          </a>
+        </div>
+        <div class="note">
+          <span><svg><use href="#i-check"/></svg>Ücretsiz</span>
+          <span><svg><use href="#i-check"/></svg>Hesap gerekmez</span>
+          <span><svg><use href="#i-check"/></svg>Konumun cihazında kalır</span>
+        </div>
+      </div>
+      <div class="hero-phones" aria-hidden="true">
+        <div class="phone p1"><img src="assets/img/screens/harita.webp" alt="" loading="eager"></div>
+        <div class="phone p2"><img src="assets/img/screens/alarm.webp" alt="" loading="eager"></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- NASIL ÇALIŞIR -->
+  <section id="nasil" class="alt">
+    <div class="wrap">
+      <div class="section-head reveal">
+        <h2>Üç adımda kur, unut</h2>
+        <p>Varış saatini tahmin etmene gerek yok. Alarm zamana göre değil, konumuna göre çalar.</p>
+      </div>
+      <div class="steps">
+        <div class="step reveal">
+          <div class="phone"><img src="assets/img/screens/harita.webp" alt="Haritada Kadıköy hedefi ve 500 metrelik alarm alanı seçimi" loading="lazy"></div>
+          <span class="num">1</span>
+          <h3>Hedefini seç</h3>
+          <p>Durak, iskele, mekân ya da adres ara veya haritaya dokun. Alarm alanının büyüklüğünü belirle.</p>
+        </div>
+        <div class="step reveal">
+          <div class="phone"><img src="assets/img/screens/kilit-ekrani.webp" alt="Kilit ekranında kalan mesafeyi gösteren canlı kart" loading="lazy"></div>
+          <span class="num">2</span>
+          <h3>Telefonu kilitle</h3>
+          <p>Kalan mesafeyi ve tahmini süreyi kilit ekranından takip et. Ya da hiç bakma, uyu.</p>
+        </div>
+        <div class="step reveal">
+          <div class="phone"><img src="assets/img/screens/alarm.webp" alt="Hedefe ulaşıldığında çalan alarm ekranı" loading="lazy"></div>
+          <span class="num">3</span>
+          <h3>Kalk, geldik!</h3>
+          <p>Alarm alanına girdiğin an yüksek sesli alarm çalar. Durdur ya da 5 dakika ertele.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ÖZELLİKLER -->
+  <section id="ozellikler">
+    <div class="wrap">
+      <div class="section-head reveal">
+        <h2>Durağını kaçırmaman için her şey</h2>
+        <p>Otobüs, metro, metrobüs, vapur, tren — nereye gidiyorsan.</p>
+      </div>
+      <div class="features">
+        <div class="feature reveal"><div class="ic"><svg><use href="#i-bell"/></svg></div><h3>Sessiz modda da çalar</h3><p>iOS 26.1 ve sonrasında sistem alarmı olarak çalar; sessiz anahtarı, Odak ve Uyku modu onu durduramaz.</p></div>
+        <div class="feature reveal"><div class="ic"><svg><use href="#i-lock"/></svg></div><h3>Kilit ekranında canlı</h3><p>Canlı Etkinlik ve Dynamic Island'da kalan mesafe, ilerleme çubuğu ve tahmini varış süresi.</p></div>
+        <div class="feature reveal"><div class="ic"><svg><use href="#i-pin"/></svg></div><h3>Güçlü yer arama</h3><p>Apple Haritalar ile durak, mekân ve adres ara; sonuçlar yakınından başlayarak sıralanır.</p></div>
+        <div class="feature reveal"><div class="ic"><svg><use href="#i-alarm"/></svg></div><h3>Birden fazla alarm</h3><p>Aynı anda birkaç hedef kur. Her alarm kendi renginde, haritada ve kilit ekranında ayrı görünür.</p></div>
+        <div class="feature reveal"><div class="ic"><svg><use href="#i-star"/></svg></div><h3>Kayıtlı yerler</h3><p>Ev, İş, Okul ya da kendi etiketin. Sık gittiğin yerlere tek dokunuşla alarm kur.</p></div>
+        <div class="feature reveal"><div class="ic"><svg><use href="#i-history"/></svg></div><h3>Geçmişten tekrar kur</h3><p>Önceki yolculukların listelenir; aynı alarmı bir dokunuşla yeniden başlat.</p></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- KİLİT EKRANI -->
+  <section class="alt">
+    <div class="wrap split">
+      <div class="phones reveal" aria-hidden="true">
+        <div class="phone"><img src="assets/img/screens/kilit-ekrani.webp" alt="" loading="lazy"></div>
+        <div class="phone"><img src="assets/img/screens/alarmlar.webp" alt="" loading="lazy"></div>
+      </div>
+      <div class="text reveal">
+        <h2>Telefon cebinde, <span class="accent">gözün kapalı.</span></h2>
+        <p class="muted">Kalk, Geldik! konumunu arka planda takip eder; uygulamayı açık tutman gerekmez.</p>
+        <ul class="checks">
+          <li><svg><use href="#i-check"/></svg><span><strong>Hedefe yaklaşınca uyarı.</strong> Alarm alanına az kala bir ön bildirim gelir.</span></li>
+          <li><svg><use href="#i-check"/></svg><span><strong>Alarm renkleri.</strong> Çalan alarm, kilit ekranında da kendi renginde görünür.</span></li>
+          <li><svg><use href="#i-check"/></svg><span><strong>Pil dostu.</strong> Hedeften uzaktayken seyrek, yaklaştıkça sık konum alır.</span></li>
+          <li><svg><use href="#i-check"/></svg><span><strong>Erteleme.</strong> Bir durak önce mi uyandın? 5 dakika ertele.</span></li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <!-- VİDEO -->
+  <section id="video">
+    <div class="wrap">
+      <div class="section-head reveal">
+        <h2>30 saniyede Kalk, Geldik!</h2>
+        <p>Uyuyakalan yolcunun hikâyesi.</p>
+      </div>
+      <div class="video-box reveal">
+        <video controls playsinline preload="none" poster="assets/video/tanitim-poster.jpg">
+          <source src="assets/video/tanitim.mp4" type="video/mp4">
+          Tarayıcın videoyu oynatamıyor.
+        </video>
+      </div>
+    </div>
+  </section>
+
+  <!-- GİZLİLİK -->
+  <section>
+    <div class="wrap">
+      <div class="privacy-band reveal">
+        <svg aria-hidden="true"><use href="#i-shield"/></svg>
+        <div>
+          <h2>Konumun sende kalır.</h2>
+          <p>Hesap yok, reklam yok, analiz aracı yok. Konumun yalnızca bir alarm aktifken ve yalnızca telefonunda işlenir; hiçbir sunucuya gönderilmez.</p>
+          <a href="gizlilik.html">Gizlilik politikasını oku →</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- SSS -->
+  <section id="sss" class="alt">
+    <div class="wrap">
+      <div class="section-head reveal">
+        <h2>Sık sorulan sorular</h2>
+      </div>
+      <div class="faq reveal">
+        <details>
+          <summary>Telefon sessizdeyken alarm çalar mı?</summary>
+          <div><p>Evet. iOS 26.1 ve sonrasında alarm, saat uygulamasındaki alarmlar gibi sistem alarmı olarak çalar; sessiz anahtarı ve Odak modları onu engellemez. Daha eski iOS sürümlerinde uygulama alarm sesini kendisi çalar ve bildirim gönderir.</p></div>
+        </details>
+        <details>
+          <summary>Uygulamayı açık tutmam gerekiyor mu?</summary>
+          <div><p>Hayır. Alarmı kurduktan sonra telefonu kilitleyebilirsin. Uygulamayı uygulama değiştiriciden yukarı kaydırıp kapatma; iOS'un arka planda konumu iletebilmesi için uygulamanın arka planda kalması gerekir.</p></div>
+        </details>
+        <details>
+          <summary>Neden "Her Zaman" konum izni istiyor?</summary>
+          <div><p>Ekran kilitliyken ve uygulama arka plandayken hedefe vardığını anlayabilmek için. Konum yalnızca aktif bir alarm varken kullanılır ve telefonundan dışarı çıkmaz.</p></div>
+        </details>
+        <details>
+          <summary>Pili çok tüketir mi?</summary>
+          <div><p>Hedefe uzakken konum seyrek alınır, yaklaştıkça sıklaşır. Alarm bitince takip tamamen durur. Uzun yolculuklarda yine de telefonunun şarjlı olmasını öneririz.</p></div>
+        </details>
+        <details>
+          <summary>Metroda, tünelde çalışır mı?</summary>
+          <div><p>Konum, GPS ve çevredeki Wi-Fi/baz istasyonlarından alınır. Tünellerde konum gecikebilir; bu yüzden metroda alarm alanını biraz daha büyük (ör. 1 km) seçmeni öneririz.</p></div>
+        </details>
+        <details>
+          <summary>Ücretli mi?</summary>
+          <div><p>Hayır, Kalk, Geldik! ücretsiz. Hesap açman da gerekmiyor.</p></div>
+        </details>
+      </div>
+      <p class="muted" style="text-align:center;margin-top:28px">Başka bir sorun mu var? <a href="destek.html">Destek sayfasına</a> göz at.</p>
+    </div>
+  </section>
+
+  <!-- İNDİR -->
+  <section id="indir" class="final-cta">
+    <div class="wrap reveal">
+      <img src="assets/img/icon-256.png" alt="Kalk, Geldik! uygulama ikonu" width="96" height="96">
+      <h2>Bir daha durağını kaçırma.</h2>
+      <p class="muted" style="font-size:1.1rem;margin-bottom:26px">Kalk, Geldik! çok yakında App Store ve Google Play'de.</p>
+      <div class="cta-row" style="justify-content:center">
+      <a class="btn store-btn dark" href="#indir" aria-disabled="true">
+          <svg><use href="#i-phone"/></svg>
+          <span class="lines"><small>Çok yakında</small><span>App Store'da</span></span>
+        </a>
+        <a class="btn store-btn dark" href="#indir" aria-disabled="true">
+          <svg><use href="#i-play"/></svg>
+          <span class="lines"><small>Çok yakında</small><span>Google Play'de</span></span>
+        </a>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer class="site-footer">
+  <div class="wrap">
+    <span>© <span data-year>2026</span> Kalk, Geldik!</span>
+    <nav>
+      <a href="destek.html">Destek</a>
+      <a href="gizlilik.html">Gizlilik</a>
+      <a href="mailto:info@kalkgeldik.com">İletişim</a>
+    </nav>
+  </div>
+</footer>
+<script src="assets/js/main.js" defer></script>
+</body>
+</html>
