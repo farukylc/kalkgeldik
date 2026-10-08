@@ -36,7 +36,16 @@
   "KalkGeldik"
  ],
  "description": "Konuma göre çalan durak alarmı. Otobüste, metroda, vapurda uyuyakalsan da hedefine gelince seni uyandırır; telefon sessizde ve kilitliyken bile çalar.",
- "operatingSystem": "iOS",
+ "operatingSystem": "iOS 26.1+",
+ "featureList": [
+  "Konuma göre durak alarmı",
+  "Sessiz modda ve kilit ekranında sistem alarmı",
+  "Canlı Etkinlik ve Dynamic Island",
+  "Birden fazla alarm",
+  "Kayıtlı yerler: ad, renk, yarıçap, fotoğraf ve sembol",
+  "Zamanlı alarmlar (ör. hafta içi 08:00–10:00)",
+  "Geçmişten tekrar kur"
+ ],
  "applicationCategory": "TravelApplication",
  "inLanguage": "tr",
  "offers": {
@@ -75,7 +84,7 @@
    "name": "Telefon sessizdeyken alarm çalar mı?",
    "acceptedAnswer": {
     "@type": "Answer",
-    "text": "Evet. iOS 26.1 ve sonrasında alarm, saat uygulamasındaki alarmlar gibi sistem alarmı olarak çalar; sessiz anahtarı ve Odak modları onu engellemez. Daha eski iOS sürümlerinde uygulama alarm sesini kendisi çalar ve bildirim gönderir."
+    "text": "Evet. Alarm, saat uygulamasındaki alarmlar gibi sistem alarmı olarak çalar; sessiz anahtarı ve Odak modları onu engellemez. Uygulama iOS 26.1 ve sonrasını destekler."
    }
   },
   {
@@ -83,7 +92,7 @@
    "name": "Uygulamayı açık tutmam gerekiyor mu?",
    "acceptedAnswer": {
     "@type": "Answer",
-    "text": "Hayır. Alarmı kurduktan sonra telefonu kilitleyebilirsin. Uygulamayı uygulama değiştiriciden yukarı kaydırıp kapatma; iOS'un arka planda konumu iletebilmesi için uygulamanın arka planda kalması gerekir."
+    "text": "Hayır. Alarmı kurduktan sonra telefonu kilitleyebilirsin. Uygulamayı kapatsan bile hedef alanına girdiğinde iOS uygulamayı uyandırır ve alarm çalar. Kalan mesafeyi kilit ekranında canlı görmek için uygulamayı arka planda açık bırakman yeterli."
    }
   },
   {
@@ -91,7 +100,7 @@
    "name": "Neden \"Her Zaman\" konum izni istiyor?",
    "acceptedAnswer": {
     "@type": "Answer",
-    "text": "Ekran kilitliyken ve uygulama arka plandayken hedefe vardığını anlayabilmek için. Konum yalnızca aktif bir alarm varken kullanılır ve telefonundan dışarı çıkmaz."
+    "text": "Ekran kilitliyken, uygulama arka plandayken ya da kapalıyken hedefe vardığını anlayabilmek için. Konum yalnızca aktif bir alarm ya da zamanladığın kayıtlı yerler için kullanılır ve telefonundan dışarı çıkmaz."
    }
   },
   {
@@ -108,6 +117,14 @@
    "acceptedAnswer": {
     "@type": "Answer",
     "text": "Konum, GPS ve çevredeki Wi-Fi/baz istasyonlarından alınır. Tünellerde konum gecikebilir; bu yüzden metroda alarm alanını biraz daha büyük (ör. 1 km) seçmeni öneririz."
+   }
+  },
+  {
+   "@type": "Question",
+   "name": "Alarmı belli saatlerde otomatik açabilir miyim?",
+   "acceptedAnswer": {
+    "@type": "Answer",
+    "text": "Evet. Kayıtlı bir yeri düzenlerken ya da ilk kurarken Zamanla'yı aç; günleri (ör. hafta içi) ve başlangıç–bitiş saatini seç. Alarm o aralıkta kendiliğinden açılır, sessiz bir bildirimle haber verir ve bitiş saatinde kapanır. Açıldığında zaten oradaysan o sefer çalmaz."
    }
   },
   {
@@ -134,6 +151,8 @@
     <symbol id="i-bell" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M6.2 16.8 V11.2 A5.8 5.8 0 0 1 17.8 11.2 V16.8 L19.4 18.4 H4.6 Z"/><path d="M10 21 A2.1 2.1 0 0 0 14 21"/><path d="M12 3.4 V5.4"/></symbol>
     <symbol id="i-alarm" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="13" r="7"/><path d="M12 9.5 V13 L14.5 14.6"/><path d="M4.2 6.6 L6.8 4"/><path d="M19.8 6.6 L17.2 4"/><path d="M7.6 19.2 L6.2 21"/><path d="M16.4 19.2 L17.8 21"/></symbol>
     <symbol id="i-star" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3.6 L14.41 9.28 L20.56 9.82 L15.9 13.87 L17.29 19.88 L12 16.7 L6.71 19.88 L8.1 13.87 L3.44 9.82 L9.59 9.28 Z"/></symbol>
+    <symbol id="i-calendar" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3.5" y="5" width="17" height="15.5" rx="2.6"/><path d="M3.5 10 H20.5"/><path d="M8 3 V6.5 M16 3 V6.5"/><path d="M12 13 V15.6 L13.8 16.8"/></symbol>
+    <symbol id="i-image" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3.5" y="5" width="17" height="14" rx="2.5"/><circle cx="9" cy="10" r="1.6"/><path d="M4 17 L9.5 12.5 L13 15.5 L16 13 L20 16.5"/></symbol>
     <symbol id="i-history" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4.3 13.5 A8 8 0 1 0 6.6 6.6"/><path d="M4 4.2 V8.2 H8"/><path d="M12 8.2 V12.4 L15 14.2"/></symbol>
     <symbol id="i-sleep" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M19.6 14.6 A8 8 0 1 1 9.4 4.4 A6.4 6.4 0 0 0 19.6 14.6 Z"/><path d="M14.6 3.6 H18.4 L14.6 8 H18.4"/></symbol>
     <symbol id="i-bus" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="4.5" y="3.5" width="15" height="14.5" rx="3"/><path d="M4.5 11 H19.5"/><path d="M7.5 18 V20.5 M16.5 18 V20.5"/><circle cx="8.2" cy="14.6" r=".9" fill="currentColor"/><circle cx="15.8" cy="14.6" r=".9" fill="currentColor"/></symbol>
@@ -229,12 +248,15 @@
         <p>Otobüs, metro, metrobüs, vapur, tren — nereye gidiyorsan.</p>
       </div>
       <div class="features">
-        <div class="feature reveal"><div class="ic"><svg><use href="#i-bell"/></svg></div><h3>Sessiz modda da çalar</h3><p>iOS 26.1 ve sonrasında sistem alarmı olarak çalar; sessiz anahtarı, Odak ve Uyku modu onu durduramaz.</p></div>
+        <div class="feature reveal"><div class="ic"><svg><use href="#i-bell"/></svg></div><h3>Sessiz modda da çalar</h3><p>Sistem alarmı olarak çalar; sessiz anahtarı, Odak ve Uyku modu onu durduramaz.</p></div>
         <div class="feature reveal"><div class="ic"><svg><use href="#i-lock"/></svg></div><h3>Kilit ekranında canlı</h3><p>Canlı Etkinlik ve Dynamic Island'da kalan mesafe, ilerleme çubuğu ve tahmini varış süresi.</p></div>
         <div class="feature reveal"><div class="ic"><svg><use href="#i-pin"/></svg></div><h3>Güçlü yer arama</h3><p>Apple Haritalar ile durak, mekân ve adres ara; sonuçlar yakınından başlayarak sıralanır.</p></div>
         <div class="feature reveal"><div class="ic"><svg><use href="#i-alarm"/></svg></div><h3>Birden fazla alarm</h3><p>Aynı anda birkaç hedef kur. Her alarm kendi renginde, haritada ve kilit ekranında ayrı görünür.</p></div>
-        <div class="feature reveal"><div class="ic"><svg><use href="#i-star"/></svg></div><h3>Kayıtlı yerler</h3><p>Ev, İş, Okul ya da kendi etiketin. Sık gittiğin yerlere tek dokunuşla alarm kur.</p></div>
+        <div class="feature reveal"><div class="ic"><svg><use href="#i-star"/></svg></div><h3>Kayıtlı yerler</h3><p>Ev, İş, Okul ya da kendi etiketin. Sık gittiğin yerlere tek dokunuşla alarm kur; adını, rengini ve yarıçapını istediğin zaman düzenle.</p></div>
+        <div class="feature reveal"><div class="ic"><svg><use href="#i-calendar"/></svg></div><h3>Zamanlı alarmlar</h3><p>"Hafta içi 08:00–10:00" gibi bir zaman aralığı seç; kayıtlı alarmın o saatlerde kendiliğinden açılır, bitişte kapanır. Uygulama kapalıyken de varınca çalar.</p></div>
+        <div class="feature reveal"><div class="ic"><svg><use href="#i-image"/></svg></div><h3>Fotoğraf ve sembol</h3><p>Kayıtlı yerine galeriden ya da kameradan bir fotoğraf veya sembol ekle; haritada ve listede onunla görünsün.</p></div>
         <div class="feature reveal"><div class="ic"><svg><use href="#i-history"/></svg></div><h3>Geçmişten tekrar kur</h3><p>Önceki yolculukların listelenir; aynı alarmı bir dokunuşla yeniden başlat.</p></div>
+        <div class="feature reveal"><div class="ic"><svg><use href="#i-shield"/></svg></div><h3>Boşuna çalmaz</h3><p>Zaten alarm alanının içindeysen alarm kurulmaz, zamanlı alarm da o sefer açılmaz; sadece gerçekten vardığında uyandırır.</p></div>
       </div>
     </div>
   </section>
@@ -282,7 +304,7 @@
         <svg aria-hidden="true"><use href="#i-shield"/></svg>
         <div>
           <h2>Konumun sende kalır.</h2>
-          <p>Hesap yok, reklam yok, analiz aracı yok. Konumun yalnızca bir alarm aktifken ve yalnızca telefonunda işlenir; hiçbir sunucuya gönderilmez.</p>
+          <p>Hesap yok, reklam yok, analiz aracı yok. Konumun yalnızca bir alarm aktifken ya da zamanladığın yerler için ve yalnızca telefonunda işlenir; hiçbir sunucuya gönderilmez.</p>
           <a href="gizlilik.html">Gizlilik politikasını oku →</a>
         </div>
       </div>
@@ -298,15 +320,15 @@
       <div class="faq reveal">
         <details>
           <summary>Telefon sessizdeyken alarm çalar mı?</summary>
-          <div><p>Evet. iOS 26.1 ve sonrasında alarm, saat uygulamasındaki alarmlar gibi sistem alarmı olarak çalar; sessiz anahtarı ve Odak modları onu engellemez. Daha eski iOS sürümlerinde uygulama alarm sesini kendisi çalar ve bildirim gönderir.</p></div>
+          <div><p>Evet. Alarm, saat uygulamasındaki alarmlar gibi sistem alarmı olarak çalar; sessiz anahtarı ve Odak modları onu engellemez. Uygulama iOS 26.1 ve sonrasını destekler.</p></div>
         </details>
         <details>
           <summary>Uygulamayı açık tutmam gerekiyor mu?</summary>
-          <div><p>Hayır. Alarmı kurduktan sonra telefonu kilitleyebilirsin. Uygulamayı uygulama değiştiriciden yukarı kaydırıp kapatma; iOS'un arka planda konumu iletebilmesi için uygulamanın arka planda kalması gerekir.</p></div>
+          <div><p>Hayır. Alarmı kurduktan sonra telefonu kilitleyebilirsin. Uygulamayı kapatsan bile hedef alanına girdiğinde iOS uygulamayı uyandırır ve alarm çalar. Kalan mesafeyi kilit ekranında canlı görmek için uygulamayı arka planda açık bırakman yeterli.</p></div>
         </details>
         <details>
           <summary>Neden "Her Zaman" konum izni istiyor?</summary>
-          <div><p>Ekran kilitliyken ve uygulama arka plandayken hedefe vardığını anlayabilmek için. Konum yalnızca aktif bir alarm varken kullanılır ve telefonundan dışarı çıkmaz.</p></div>
+          <div><p>Ekran kilitliyken, uygulama arka plandayken ya da kapalıyken hedefe vardığını anlayabilmek için. Konum yalnızca aktif bir alarm ya da zamanladığın kayıtlı yerler için kullanılır ve telefonundan dışarı çıkmaz.</p></div>
         </details>
         <details>
           <summary>Pili çok tüketir mi?</summary>
@@ -315,6 +337,10 @@
         <details>
           <summary>Metroda, tünelde çalışır mı?</summary>
           <div><p>Konum, GPS ve çevredeki Wi-Fi/baz istasyonlarından alınır. Tünellerde konum gecikebilir; bu yüzden metroda alarm alanını biraz daha büyük (ör. 1 km) seçmeni öneririz.</p></div>
+        </details>
+        <details>
+          <summary>Alarmı belli saatlerde otomatik açabilir miyim?</summary>
+          <div><p>Evet. Kayıtlı bir yeri düzenlerken ya da ilk kurarken "Zamanla"yı aç; günleri (ör. hafta içi) ve başlangıç–bitiş saatini seç. Alarm o aralıkta kendiliğinden açılır, sessiz bir bildirimle haber verir ve bitiş saatinde kapanır. Açıldığında zaten oradaysan o sefer çalmaz.</p></div>
         </details>
         <details>
           <summary>Ücretli mi?</summary>

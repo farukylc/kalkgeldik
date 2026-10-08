@@ -48,7 +48,7 @@
 <h2>Alarmın düzgün çalışması için kontrol listesi</h2>
 <ul>
   <li><strong>Konum izni:</strong> Ayarlar › Kalk, Geldik! › Konum › <em>Her Zaman</em> ve <em>Kesin Konum</em> açık olmalı.</li>
-  <li><strong>Alarmlar (iOS 26.1+):</strong> Ayarlar › Kalk, Geldik! › Alarmlar izni açık olmalı. Böylece alarm sessiz modda ve Odak açıkken de çalar.</li>
+  <li><strong>Alarmlar:</strong> Ayarlar › Kalk, Geldik! › Alarmlar izni açık olmalı. Bu izin olmadan alarm kurulamaz; açıkken alarm sessiz modda ve Odak açıkken de çalar.</li>
   <li><strong>Bildirimler:</strong> Ayarlar › Kalk, Geldik! › Bildirimler › İzin Ver; Kilit Ekranı, Afişler ve Sesler açık.</li>
   <li><strong>Canlı Etkinlikler:</strong> Ayarlar › Kalk, Geldik! › Canlı Etkinlikler açık olmalı (kilit ekranı kartı için).</li>
   <li><strong>Arka Planda Yenileme</strong> ve <strong>Düşük Güç Modu</strong>: Düşük Güç Modu konum güncellemelerini seyrekleştirebilir.</li>
@@ -59,7 +59,7 @@
 <h2>Sık karşılaşılan sorunlar</h2>
 <div class="faq" style="margin-top:12px">
   <details><summary>Alarm sessiz modda çalmadı</summary><div>
-    <p>iOS 26.1 ve sonrasında Alarmlar iznini açtığından emin ol. Daha eski iOS sürümlerinde alarm sesi uygulama tarafından çalınır; uygulamanın arka planda açık kalması gerekir.</p></div></details>
+    <p>Alarmlar izninin açık olduğundan emin ol. Alarm iPhone’un saat alarmı sesiyle çalar; ses düzeyi Ayarlar › Ses ve Dokunuş › Zil Sesi ve Uyarılar’dan ayarlanır. Kulaklık ya da Mac’e yönlendirme açıksa ses oraya gidebilir.</p></div></details>
   <details><summary>Kilit ekranında hiçbir şey görünmüyor</summary><div>
     <p>Canlı Etkinlikler ve kilit ekranı bildirimleri açık olmalı. Uyku veya Rahatsız Etme odağı açıksa: Ayarlar › Odak › Uyku › Uygulamalar › Kalk, Geldik!'i izin verilenlere ekle.</p></div></details>
   <details><summary>Bildirim içeriği gizli görünüyor</summary><div>
@@ -68,8 +68,12 @@
     <p>Tünel ve metro hatlarında konum gecikebilir. Alarm alanını büyüt (ör. 1 km). Konum izninin "Her Zaman" ve "Kesin Konum" olduğundan emin ol.</p></div></details>
   <details><summary>Aradığım yer çıkmıyor</summary><div>
     <p>Yer adıyla birlikte semt adını yaz (ör. "Moda İskelesi Kadıköy") ya da haritada istediğin noktaya dokunarak hedef seç.</p></div></details>
+  <details><summary>“Alarm kurulamaz, alanın içindesin” diyor</summary><div>
+    <p>Bulunduğun yer seçtiğin alarm alanının içinde; alarm hemen çalacağı için kurulmaz. Yarıçapı küçült ya da yeri kayıtlı alarmlara ekle, alandan çıkınca kur. İstersen zamanlayarak belli saatlerde kendiliğinden açılmasını sağlayabilirsin.</p></div></details>
+  <details><summary>Zamanlı alarm açılmadı</summary><div>
+    <p>Açıldığı anda zaten o yerdeysen alarm o sefer açılmaz (boşuna çalmasın diye). Konum izni “Her Zaman” olmalı; bildirim izni kapalıysa açıldığını haber veren bildirim gelmez ama alarm yine çalışır. Bitiş saati geçince alarm kendiliğinden kapanır.</p></div></details>
   <details><summary>Alarmı nasıl erteler ya da durdururum?</summary><div>
-    <p>Alarm ekranındaki "Alarmı durdur" ya da "5 dk ertele" düğmelerini kullan. iOS 26.1+'da kilit ekranındaki sistem alarmından da durdurabilirsin.</p></div></details>
+    <p>Alarm ekranındaki "Alarmı durdur" ya da "5 dk ertele" düğmelerini kullan. Kilit ekranındaki sistem alarmından da durdurabilirsin.</p></div></details>
 </div>
 </section>
 
@@ -80,7 +84,7 @@
 <p>Need help with Kalk, Geldik!? Email us at <a href="mailto:info@kalkgeldik.com">info@kalkgeldik.com</a>.</p>
 <ul>
   <li><strong>Location:</strong> Settings › Kalk, Geldik! › Location › <em>Always</em> with <em>Precise Location</em> on.</li>
-  <li><strong>Alarms (iOS 26.1+):</strong> allow Alarms so the alarm rings in silent mode and during Focus.</li>
+  <li><strong>Alarms:</strong> allow Alarms; without it no alarm can be set. It rings in silent mode and during Focus.</li>
   <li><strong>Notifications &amp; Live Activities:</strong> allow notifications on the Lock Screen and turn on Live Activities.</li>
   <li>Don't force-quit the app from the app switcher while an alarm is active.</li>
   <li>In tunnels and the metro, location may lag — use a larger alarm radius (e.g. 1 km).</li>
