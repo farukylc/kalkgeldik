@@ -3,8 +3,8 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Kalk, Geldik! — Durak alarmı: otobüste, metroda uyuyakalma</title>
-<meta name="description" content="Kalk, Geldik! konuma göre çalan durak alarmı: otobüste, metroda, metrobüste ve vapurda uyuyakalsan da durağına gelince seni uyandırır — telefon sessizde ve kilitliyken bile. Ücretsiz, hesap gerekmez.">
+<title>Kalk, Geldik! — Konumuna göre çalan durak alarmı</title>
+<meta name="description" content="Kalk, Geldik! ile durağını kaçırma. Konumuna göre çalan alarm, telefonun sessizde ve kilitliyken bile seni uyandırır. Ücretsizdir, hesap gerektirmez.">
 <link rel="canonical" href="https://kalkgeldik.com/">
 <meta name="theme-color" content="#FF5A36">
 <link rel="icon" type="image/png" sizes="32x32" href="assets/img/favicon-32.png">
@@ -14,7 +14,7 @@
 <meta property="og:title" content="Kalk, Geldik! — Durağına gelince uyandıran alarm">
 <meta property="og:url" content="https://kalkgeldik.com/">
 <meta property="og:site_name" content="Kalk, Geldik!">
-<meta property="og:description" content="Sen uyu, durağına gelince biz uyandıralım. Sessiz modda ve kilit ekranında bile çalan konum alarmı.">
+<meta property="og:description" content="Sen uyu, durağına gelince biz uyandıralım. Telefonun sessizde ve kilitliyken bile çalan durak alarmı.">
 <meta property="og:image" content="https://kalkgeldik.com/assets/img/og.png">
 <meta property="og:image:width" content="1200">
 <meta property="og:image:height" content="630">
@@ -36,7 +36,7 @@
   "Kalk Geldik",
   "KalkGeldik"
  ],
- "description": "Konuma göre çalan durak alarmı. Otobüste, metroda, vapurda uyuyakalsan da hedefine gelince seni uyandırır; telefon sessizde ve kilitliyken bile çalar.",
+ "description": "Konumuna göre çalan durak alarmı. Otobüste, metroda veya vapurda uyuyakalsan da hedefine vardığında seni uyandırır. Telefonun sessizde ve kilitliyken bile çalar.",
  "operatingSystem": "iOS 26.1+",
  "featureList": [
   "Konuma göre durak alarmı",
@@ -45,7 +45,7 @@
   "Birden fazla alarm",
   "Kayıtlı yerler: ad, renk, yarıçap, fotoğraf ve sembol",
   "Zamanlı alarmlar (ör. hafta içi 08:00–10:00)",
-  "Geçmişten tekrar kur"
+  "Geçmişten yeniden kur"
  ],
  "applicationCategory": "TravelApplication",
  "inLanguage": "tr",
@@ -85,7 +85,7 @@
    "name": "Telefon sessizdeyken alarm çalar mı?",
    "acceptedAnswer": {
     "@type": "Answer",
-    "text": "Evet. Alarm, saat uygulamasındaki alarmlar gibi sistem alarmı olarak çalar; sessiz anahtarı ve Odak modları onu engellemez. Uygulama iOS 26.1 ve sonrasını destekler."
+    "text": "Evet. Alarm, iPhone’un Saat uygulamasındaki alarmlar gibi bir sistem alarmı olarak çalar. Sessiz mod ve Odak modları alarmı engellemez. Uygulama, iOS 26.1 ve sonraki sürümleri destekler."
    }
   },
   {
@@ -93,15 +93,15 @@
    "name": "Uygulamayı açık tutmam gerekiyor mu?",
    "acceptedAnswer": {
     "@type": "Answer",
-    "text": "Hayır. Alarmı kurduktan sonra telefonu kilitleyebilirsin. Uygulamayı kapatsan bile hedef alanına girdiğinde iOS uygulamayı uyandırır ve alarm çalar. Kalan mesafeyi kilit ekranında canlı görmek için uygulamayı arka planda açık bırakman yeterli."
+    "text": "Hayır. Alarmı kurduktan sonra telefonunu kilitleyebilirsin. Uygulama kapalı olsa bile hedef alanına girdiğinde iOS uygulamayı uyandırır ve alarm çalar. Kalan mesafeyi kilit ekranında canlı olarak görmek için uygulamayı arka planda açık bırakman yeterlidir."
    }
   },
   {
    "@type": "Question",
-   "name": "Neden \"Her Zaman\" konum izni istiyor?",
+   "name": "Neden “Her Zaman” konum izni gerekiyor?",
    "acceptedAnswer": {
     "@type": "Answer",
-    "text": "Ekran kilitliyken, uygulama arka plandayken ya da kapalıyken hedefe vardığını anlayabilmek için. Konum yalnızca aktif bir alarm ya da zamanladığın kayıtlı yerler için kullanılır ve telefonundan dışarı çıkmaz."
+    "text": "Bu izin, ekran kilitliyken veya uygulama arka planda ya da kapalıyken hedefe vardığını anlayabilmek için gereklidir. Alarm için konumun yalnızca etkin bir alarm veya zamanladığın kayıtlı yerler kapsamında kullanılır ve cihazında işlenir."
    }
   },
   {
@@ -109,23 +109,23 @@
    "name": "Pili çok tüketir mi?",
    "acceptedAnswer": {
     "@type": "Answer",
-    "text": "Hedefe uzakken konum seyrek alınır, yaklaştıkça sıklaşır. Alarm bitince takip tamamen durur. Uzun yolculuklarda yine de telefonunun şarjlı olmasını öneririz."
+    "text": "Hedefe uzakken konumun daha seyrek, yaklaştıkça daha sık güncellenir. Alarm sona erdiğinde konum takibi durur. Uzun yolculuklardan önce telefonunu şarj etmeni öneririz."
    }
   },
   {
    "@type": "Question",
-   "name": "Metroda, tünelde çalışır mı?",
+   "name": "Metroda ve tünellerde çalışır mı?",
    "acceptedAnswer": {
     "@type": "Answer",
-    "text": "Konum, GPS ve çevredeki Wi-Fi/baz istasyonlarından alınır. Tünellerde konum gecikebilir; bu yüzden metroda alarm alanını biraz daha büyük (ör. 1 km) seçmeni öneririz."
+    "text": "Konumun GPS, Wi-Fi ağları ve baz istasyonları yardımıyla belirlenir. Tünellerde konum güncellemeleri gecikebilir. Bu nedenle metroda daha geniş bir alarm alanı seçmeni öneririz; örneğin 1 km."
    }
   },
   {
    "@type": "Question",
-   "name": "Alarmı belli saatlerde otomatik açabilir miyim?",
+   "name": "Alarmı belirli saatlerde otomatik olarak açabilir miyim?",
    "acceptedAnswer": {
     "@type": "Answer",
-    "text": "Evet. Kayıtlı bir yeri düzenlerken ya da ilk kurarken Zamanla'yı aç; günleri (ör. hafta içi) ve başlangıç–bitiş saatini seç. Alarm o aralıkta kendiliğinden açılır, bir bildirimle haber verir ve bitiş saatinde kapanır. Açıldığında zaten oradaysan hemen çalar."
+    "text": "Evet. Kayıtlı bir yer için alarm kurarken veya kaydı düzenlerken “Zamanla” seçeneğini aç. Günleri (örneğin hafta içi) ve başlangıç ile bitiş saatlerini belirle. Alarm, seçtiğin zaman aralığında otomatik olarak etkinleşir ve bunu bir bildirimle haber verir. Bitiş saatinde kapanır. Etkinleştiğinde zaten alarm alanındaysan hemen çalar."
    }
   },
   {
@@ -133,7 +133,7 @@
    "name": "Ücretli mi?",
    "acceptedAnswer": {
     "@type": "Answer",
-    "text": "Hayır, Kalk, Geldik! ücretsiz. Hesap açman da gerekmiyor."
+    "text": "Hayır, Kalk, Geldik! ücretsizdir. Hesap açman da gerekmez."
    }
   }
  ]
@@ -188,7 +188,7 @@
       <div>
         <span class="eyebrow"><svg width="16" height="16"><use href="#i-sleep"/></svg>Toplu taşımada gönül rahatlığıyla uyu</span>
         <h1>Sen uyu,<br><span class="accent">durağına gelince</span><br>biz uyandıralım.</h1>
-        <p class="lead">Gideceğin yeri haritada seç, telefonu kilitle. Hedefe vardığın anda <strong>Kalk, Geldik!</strong> çalar — telefon sessizdeyken bile.</p>
+        <p class="lead">Gideceğin yeri haritada seç, alarmını kur ve telefonunu kilitle. Hedefe vardığında <strong>Kalk, Geldik!</strong> seni uyandırsın. Telefonun sessizdeyken bile.</p>
         <div class="cta-row">
           <a class="btn store-btn dark" href="#indir">
             <svg><use href="#i-phone"/></svg>
@@ -216,27 +216,27 @@
   <section id="nasil" class="alt">
     <div class="wrap">
       <div class="section-head reveal">
-        <h2>Üç adımda kur, unut</h2>
-        <p>Varış saatini tahmin etmene gerek yok. Alarm zamana göre değil, konumuna göre çalar.</p>
+        <h2>Üç adımda kur, rahatça uyu</h2>
+        <p>Varış saatini tahmin etmene gerek yok. Alarmın, seçtiğin konuma ulaştığında çalar.</p>
       </div>
       <div class="steps">
         <div class="step reveal">
           <div class="phone"><img src="assets/img/screens/harita.webp" alt="Haritada Kadıköy hedefi ve 500 metrelik alarm alanı seçimi" loading="lazy"></div>
           <span class="num">1</span>
           <h3>Hedefini seç</h3>
-          <p>Durak, iskele, mekân ya da adres ara veya haritaya dokun. Alarm alanının büyüklüğünü belirle.</p>
+          <p>Bir durak, iskele, mekân veya adres ara. İstersen haritaya dokunarak hedefini seç. Ardından alarm alanının büyüklüğünü belirle.</p>
         </div>
         <div class="step reveal">
           <div class="phone"><img src="assets/img/screens/kilit-ekrani.webp" alt="Kilit ekranında kalan mesafeyi gösteren canlı kart" loading="lazy"></div>
           <span class="num">2</span>
           <h3>Telefonu kilitle</h3>
-          <p>Kalan mesafeyi ve tahmini süreyi kilit ekranından takip et. Ya da hiç bakma, uyu.</p>
+          <p>Kalan mesafeyi ve tahmini varış süreni kilit ekranından takip et. İstersen gözlerini kapat, yolculuğun tadını çıkar.</p>
         </div>
         <div class="step reveal">
           <div class="phone"><img src="assets/img/screens/alarm.webp" alt="Hedefe ulaşıldığında çalan alarm ekranı" loading="lazy"></div>
           <span class="num">3</span>
           <h3>Kalk, geldik!</h3>
-          <p>Alarm alanına girdiğin an yüksek sesli alarm çalar. Durdur ya da 5 dakika ertele.</p>
+          <p>Seçtiğin alarm alanına girdiğinde yüksek sesli alarm çalar. Alarmı durdurabilir veya 5 dakika erteleyebilirsin.</p>
         </div>
       </div>
     </div>
@@ -247,18 +247,18 @@
     <div class="wrap">
       <div class="section-head reveal">
         <h2>Durağını kaçırmaman için her şey</h2>
-        <p>Otobüs, metro, metrobüs, vapur, tren — nereye gidiyorsan.</p>
+        <p>Otobüste, metroda, metrobüste, vapurda veya trende; yolculuğun boyunca yanında.</p>
       </div>
       <div class="features">
-        <div class="feature reveal"><div class="ic"><svg><use href="#i-bell"/></svg></div><h3>Sessiz modda da çalar</h3><p>Sistem alarmı olarak çalar; sessiz anahtarı, Odak ve Uyku modu onu durduramaz.</p></div>
-        <div class="feature reveal"><div class="ic"><svg><use href="#i-lock"/></svg></div><h3>Kilit ekranında canlı</h3><p>Canlı Etkinlik ve Dynamic Island'da kalan mesafe, ilerleme çubuğu ve tahmini varış süresi.</p></div>
-        <div class="feature reveal"><div class="ic"><svg><use href="#i-pin"/></svg></div><h3>Güçlü yer arama</h3><p>Apple Haritalar ile durak, mekân ve adres ara; sonuçlar yakınından başlayarak sıralanır.</p></div>
-        <div class="feature reveal"><div class="ic"><svg><use href="#i-alarm"/></svg></div><h3>Birden fazla alarm</h3><p>Aynı anda birkaç hedef kur. Her alarm kendi renginde, haritada ve kilit ekranında ayrı görünür.</p></div>
-        <div class="feature reveal"><div class="ic"><svg><use href="#i-star"/></svg></div><h3>Kayıtlı yerler</h3><p>Ev, İş, Okul ya da kendi etiketin. Sık gittiğin yerlere tek dokunuşla alarm kur; adını, rengini ve yarıçapını istediğin zaman düzenle.</p></div>
-        <div class="feature reveal"><div class="ic"><svg><use href="#i-calendar"/></svg></div><h3>Zamanlı alarmlar</h3><p>"Hafta içi 08:00–10:00" gibi bir zaman aralığı seç; kayıtlı alarmın o saatlerde kendiliğinden açılır, bitişte kapanır. Uygulama kapalıyken de varınca çalar.</p></div>
-        <div class="feature reveal"><div class="ic"><svg><use href="#i-image"/></svg></div><h3>Fotoğraf ve sembol</h3><p>Kayıtlı yerine galeriden ya da kameradan bir fotoğraf veya sembol ekle; haritada ve listede onunla görünsün.</p></div>
-        <div class="feature reveal"><div class="ic"><svg><use href="#i-history"/></svg></div><h3>Geçmişten tekrar kur</h3><p>Önceki yolculukların listelenir; aynı alarmı bir dokunuşla yeniden başlat.</p></div>
-        <div class="feature reveal"><div class="ic"><svg><use href="#i-shield"/></svg></div><h3>Akıllı koruma</h3><p>Zaten alarm alanının içindeysen alarm hemen çalacağı için kurulmaz; yeri kaydedip zamanlayabilirsin. Zamanlı alarm başladığında oradaysan, uygulama kapalı olsa bile saatinde çalar.</p></div>
+        <div class="feature reveal"><div class="ic"><svg><use href="#i-bell"/></svg></div><h3>Sessiz modda da çalar</h3><p>Sistem alarmı sayesinde telefonun sessizdeyken, Odak veya Uyku modu açıkken de çalar.</p></div>
+        <div class="feature reveal"><div class="ic"><svg><use href="#i-lock"/></svg></div><h3>Mesafen gözünün önünde</h3><p>Kalan mesafeni, yolculuğunun ilerleyişini ve tahmini varış süreni Canlı Etkinlik ve Dynamic Island'dan takip et.</p></div>
+        <div class="feature reveal"><div class="ic"><svg><use href="#i-pin"/></svg></div><h3>Hedefini kolayca bul</h3><p>Apple Haritalar ile durak, mekân veya adres ara. Sonuçlar sana en yakın yerlerden başlayarak sıralanır.</p></div>
+        <div class="feature reveal"><div class="ic"><svg><use href="#i-alarm"/></svg></div><h3>Birden fazla alarm</h3><p>Birden fazla hedef için aynı anda alarm kur. Her alarm, haritada ve kilit ekranında kendi rengiyle ayrı ayrı görünür.</p></div>
+        <div class="feature reveal"><div class="ic"><svg><use href="#i-star"/></svg></div><h3>Kayıtlı yerler</h3><p>Ev, iş, okul veya dilediğin başka bir yer. Sık gittiğin yerleri kaydet, tek dokunuşla alarm kur. Adını, rengini ve alarm alanının yarıçapını istediğin zaman değiştir.</p></div>
+        <div class="feature reveal"><div class="ic"><svg><use href="#i-calendar"/></svg></div><h3>Zamanlı alarmlar</h3><p>“Hafta içi 08:00–10:00” gibi bir zaman aralığı seç. Kayıtlı alarmın bu saatlerde otomatik olarak etkinleşir, süre dolunca kapanır. Hedefe vardığında uygulama kapalı olsa da çalar.</p></div>
+        <div class="feature reveal"><div class="ic"><svg><use href="#i-image"/></svg></div><h3>Fotoğraf ve sembol</h3><p>Kayıtlı yerine galeriden veya kameradan bir fotoğraf ekle ya da bir sembol seç. Yerini haritada ve listede bu görselle kolayca tanı.</p></div>
+        <div class="feature reveal"><div class="ic"><svg><use href="#i-history"/></svg></div><h3>Geçmişten yeniden kur</h3><p>Önceki yolculuklarını geçmişte bul, aynı alarmı tek dokunuşla yeniden kur.</p></div>
+        <div class="feature reveal"><div class="ic"><svg><use href="#i-shield"/></svg></div><h3>Akıllı koruma</h3><p>Seçtiğin alanın içindeyken alarmın hemen çalmasını önlemek için yeni alarm kurulmaz. Bunun yerine yeri kaydedip zamanlayabilirsin. Zamanlı alarm etkinleştiğinde oradaysan uygulama kapalı olsa da çalar.</p></div>
       </div>
     </div>
   </section>
@@ -272,12 +272,12 @@
       </div>
       <div class="text reveal">
         <h2>Telefon cebinde, <span class="accent">gözün kapalı.</span></h2>
-        <p class="muted">Kalk, Geldik! konumunu arka planda takip eder; uygulamayı açık tutman gerekmez.</p>
+        <p class="muted">Kalk, Geldik! konumunu arka planda takip eder. Yolculuk boyunca uygulamayı ekranda açık tutman gerekmez.</p>
         <ul class="checks">
-          <li><svg><use href="#i-check"/></svg><span><strong>Hedefe yaklaşınca uyarı.</strong> Alarm alanına az kala bir ön bildirim gelir.</span></li>
-          <li><svg><use href="#i-check"/></svg><span><strong>Alarm renkleri.</strong> Çalan alarm, kilit ekranında da kendi renginde görünür.</span></li>
-          <li><svg><use href="#i-check"/></svg><span><strong>Pil dostu.</strong> Hedeften uzaktayken seyrek, yaklaştıkça sık konum alır.</span></li>
-          <li><svg><use href="#i-check"/></svg><span><strong>Erteleme.</strong> Bir durak önce mi uyandın? 5 dakika ertele.</span></li>
+          <li><svg><use href="#i-check"/></svg><span><strong>Hedefe yaklaşınca uyarı.</strong> Alarm alanına yaklaşırken bir ön bildirim alırsın.</span></li>
+          <li><svg><use href="#i-check"/></svg><span><strong>Her alarma bir renk.</strong> Çalan alarm, kilit ekranında da kendi renginde görünür.</span></li>
+          <li><svg><use href="#i-check"/></svg><span><strong>Pil dostu.</strong> Konumun, hedeften uzaktayken daha seyrek, yaklaştıkça daha sık güncellenir.</span></li>
+          <li><svg><use href="#i-check"/></svg><span><strong>Erteleme.</strong> Biraz erken mi uyandın? Alarmı 5 dakika ertele.</span></li>
         </ul>
       </div>
     </div>
@@ -288,12 +288,12 @@
     <div class="wrap">
       <div class="section-head reveal">
         <h2>30 saniyede Kalk, Geldik!</h2>
-        <p>Uyuyakalan yolcunun hikâyesi.</p>
+        <p>Yolculukta uyuyakalan birinin hikâyesine göz at.</p>
       </div>
       <div class="video-box reveal">
         <video controls playsinline preload="none" poster="assets/video/tanitim-poster.jpg">
           <source src="assets/video/tanitim.mp4" type="video/mp4">
-          Tarayıcın videoyu oynatamıyor.
+          Tarayıcın bu videoyu oynatmayı desteklemiyor.
         </video>
       </div>
     </div>
@@ -306,7 +306,7 @@
         <svg aria-hidden="true"><use href="#i-shield"/></svg>
         <div>
           <h2>Konumun sende kalır.</h2>
-          <p>Hesap yok, reklam yok, analiz aracı yok. Konumun yalnızca bir alarm aktifken ya da zamanladığın yerler için ve yalnızca telefonunda işlenir; hiçbir sunucuya gönderilmez.</p>
+          <p>Hesap açman gerekmez. Reklam veya analiz aracı yoktur. Alarm ve zamanladığın yerler için kullanılan konum verisi yalnızca telefonunda işlenir; hiçbir sunucuya gönderilmez.</p>
           <a href="gizlilik.html">Gizlilik politikasını oku →</a>
         </div>
       </div>
@@ -322,41 +322,41 @@
       <div class="faq reveal">
         <details>
           <summary>Telefon sessizdeyken alarm çalar mı?</summary>
-          <div><p>Evet. Alarm, saat uygulamasındaki alarmlar gibi sistem alarmı olarak çalar; sessiz anahtarı ve Odak modları onu engellemez. Uygulama iOS 26.1 ve sonrasını destekler.</p></div>
+          <div><p>Evet. Alarm, iPhone’un Saat uygulamasındaki alarmlar gibi bir sistem alarmı olarak çalar. Sessiz mod ve Odak modları alarmı engellemez. Uygulama, iOS 26.1 ve sonraki sürümleri destekler.</p></div>
         </details>
         <details>
           <summary>Uygulamayı açık tutmam gerekiyor mu?</summary>
-          <div><p>Hayır. Alarmı kurduktan sonra telefonu kilitleyebilirsin. Uygulamayı kapatsan bile hedef alanına girdiğinde iOS uygulamayı uyandırır ve alarm çalar. Kalan mesafeyi kilit ekranında canlı görmek için uygulamayı arka planda açık bırakman yeterli.</p></div>
+          <div><p>Hayır. Alarmı kurduktan sonra telefonunu kilitleyebilirsin. Uygulama kapalı olsa bile hedef alanına girdiğinde iOS uygulamayı uyandırır ve alarm çalar. Kalan mesafeyi kilit ekranında canlı olarak görmek için uygulamayı arka planda açık bırakman yeterlidir.</p></div>
         </details>
         <details>
-          <summary>Neden "Her Zaman" konum izni istiyor?</summary>
-          <div><p>Ekran kilitliyken, uygulama arka plandayken ya da kapalıyken hedefe vardığını anlayabilmek için. Konum yalnızca aktif bir alarm ya da zamanladığın kayıtlı yerler için kullanılır ve telefonundan dışarı çıkmaz.</p></div>
+          <summary>Neden “Her Zaman” konum izni gerekiyor?</summary>
+          <div><p>Bu izin, ekran kilitliyken veya uygulama arka planda ya da kapalıyken hedefe vardığını anlayabilmek için gereklidir. Alarm için konumun yalnızca etkin bir alarm veya zamanladığın kayıtlı yerler kapsamında kullanılır ve cihazında işlenir.</p></div>
         </details>
         <details>
           <summary>Pili çok tüketir mi?</summary>
-          <div><p>Hedefe uzakken konum seyrek alınır, yaklaştıkça sıklaşır. Alarm bitince takip tamamen durur. Uzun yolculuklarda yine de telefonunun şarjlı olmasını öneririz.</p></div>
+          <div><p>Hedefe uzakken konumun daha seyrek, yaklaştıkça daha sık güncellenir. Alarm sona erdiğinde konum takibi durur. Uzun yolculuklardan önce telefonunu şarj etmeni öneririz.</p></div>
         </details>
         <details>
-          <summary>Metroda, tünelde çalışır mı?</summary>
-          <div><p>Konum, GPS ve çevredeki Wi-Fi/baz istasyonlarından alınır. Tünellerde konum gecikebilir; bu yüzden metroda alarm alanını biraz daha büyük (ör. 1 km) seçmeni öneririz.</p></div>
+          <summary>Metroda ve tünellerde çalışır mı?</summary>
+          <div><p>Konumun GPS, Wi-Fi ağları ve baz istasyonları yardımıyla belirlenir. Tünellerde konum güncellemeleri gecikebilir. Bu nedenle metroda daha geniş bir alarm alanı seçmeni öneririz; örneğin 1 km.</p></div>
         </details>
         <details>
-          <summary>Alarmı belli saatlerde otomatik açabilir miyim?</summary>
-          <div><p>Evet. Kayıtlı bir yeri düzenlerken ya da ilk kurarken "Zamanla"yı aç; günleri (ör. hafta içi) ve başlangıç–bitiş saatini seç. Alarm o aralıkta kendiliğinden açılır, bir bildirimle haber verir ve bitiş saatinde kapanır. Açıldığında zaten oradaysan hemen çalar.</p></div>
+          <summary>Alarmı belirli saatlerde otomatik olarak açabilir miyim?</summary>
+          <div><p>Evet. Kayıtlı bir yer için alarm kurarken veya kaydı düzenlerken “Zamanla” seçeneğini aç. Günleri (örneğin hafta içi) ve başlangıç ile bitiş saatlerini belirle. Alarm, seçtiğin zaman aralığında otomatik olarak etkinleşir ve bunu bir bildirimle haber verir. Bitiş saatinde kapanır. Etkinleştiğinde zaten alarm alanındaysan hemen çalar.</p></div>
         </details>
         <details>
           <summary>Ücretli mi?</summary>
-          <div><p>Hayır, Kalk, Geldik! ücretsiz. Hesap açman da gerekmiyor.</p></div>
+          <div><p>Hayır, Kalk, Geldik! ücretsizdir. Hesap açman da gerekmez.</p></div>
         </details>
       </div>
-      <p class="muted" style="text-align:center;margin-top:28px">Başka bir sorun mu var? <a href="destek.html">Destek sayfasına</a> göz at.</p>
+      <p class="muted" style="text-align:center;margin-top:28px">Daha fazla yardıma mı ihtiyacın var? <a href="destek.html">Destek sayfasına</a> göz at.</p>
     </div>
   </section>
 
   <!-- İNDİR -->
   <section id="indir" class="final-cta">
     <div class="wrap reveal">
-      <img src="assets/img/icon-256.png" alt="Kalk, Geldik! uygulama ikonu" width="96" height="96">
+      <img src="assets/img/icon-256.png" alt="Kalk, Geldik! uygulama simgesi" width="96" height="96">
       <h2>Bir daha durağını kaçırma.</h2>
       <p class="muted" style="font-size:1.1rem;margin-bottom:26px">Kalk, Geldik! çok yakında App Store ve Google Play'de.</p>
       <div class="cta-row" style="justify-content:center">
