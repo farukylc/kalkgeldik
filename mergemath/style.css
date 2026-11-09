@@ -1,0 +1,70 @@
+:root {
+  --bg: #121628;
+  --card: #1c2140;
+  --line: #2a3058;
+  --text: #f4f1e8;
+  --muted: #a3a8c7;
+  --amber: #ffb547;
+  --amber-ink: #ffc56b;
+  --mint: #6fdcbf;
+}
+@media (prefers-color-scheme: light) {
+  :root {
+    --bg: #f6f3ea;
+    --card: #ffffff;
+    --line: #e4dfd0;
+    --text: #1c2140;
+    --muted: #5b6080;
+    --amber: #ffb547;
+    --amber-ink: #a8650a;
+    --mint: #1f9c7b;
+  }
+}
+* { box-sizing: border-box; }
+html { -webkit-text-size-adjust: 100%; }
+body {
+  margin: 0;
+  background: var(--bg);
+  color: var(--text);
+  font: 17px/1.6 'Nunito', system-ui, -apple-system, sans-serif;
+}
+.wrap { max-width: 720px; margin: 0 auto; padding: 28px 16px 56px; }
+header { display: flex; align-items: center; gap: 14px; margin-bottom: 8px; }
+header img { width: 64px; height: 64px; border-radius: 15px; box-shadow: 0 4px 0 rgba(0, 0, 0, 0.25); }
+header a { color: inherit; text-decoration: none; }
+.brand { font-family: 'Fredoka', 'Nunito', sans-serif; font-weight: 700; font-size: 30px; line-height: 1.1; }
+.tagline { color: var(--muted); font-size: 15px; }
+.langs { margin-left: auto; display: flex; gap: 6px; }
+.langs button {
+  font: 700 14px 'Nunito', sans-serif;
+  color: var(--muted);
+  background: var(--card);
+  border: 1px solid var(--line);
+  border-radius: 999px;
+  padding: 6px 12px;
+  cursor: pointer;
+}
+html[data-lang='tr'] .langs button[data-set='tr'],
+html[data-lang='en'] .langs button[data-set='en'] { color: #1c2140; background: var(--amber); border-color: var(--amber); }
+html[data-lang='tr'] [lang='en'],
+html[data-lang='en'] [lang='tr'] { display: none; }
+h1 { font-family: 'Fredoka', 'Nunito', sans-serif; font-weight: 600; font-size: 32px; line-height: 1.2; margin: 28px 0 4px; }
+h2 { font-family: 'Fredoka', 'Nunito', sans-serif; font-weight: 600; font-size: 21px; margin: 30px 0 6px; }
+.updated { color: var(--muted); font-size: 14px; margin: 0 0 18px; }
+p, li { color: var(--text); }
+.lead { font-size: 18px; }
+a { color: var(--amber-ink); }
+.card {
+  background: var(--card);
+  border: 1px solid var(--line);
+  border-radius: 18px;
+  padding: 18px 20px;
+  margin: 14px 0;
+}
+.card h2 { margin-top: 0; }
+.mail { font-weight: 800; font-size: 19px; word-break: break-all; }
+details { background: var(--card); border: 1px solid var(--line); border-radius: 16px; padding: 14px 18px; margin: 10px 0; }
+summary { font-weight: 800; cursor: pointer; }
+details p { margin: 10px 0 2px; }
+footer { margin-top: 40px; padding-top: 18px; border-top: 1px solid var(--line); color: var(--muted); font-size: 14px; display: flex; flex-wrap: wrap; gap: 8px 18px; }
+footer a { color: var(--muted); }
