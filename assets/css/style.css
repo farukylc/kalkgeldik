@@ -239,6 +239,18 @@ section { padding: 88px 0; }
 .lang-switch a { padding: 6px 14px; border-radius: 9px; font-weight: 700; font-size: .9rem; color: var(--muted); }
 .lang-switch a.on { background: var(--surface); color: var(--text); box-shadow: 0 1px 3px rgba(0,0,0,.08); }
 .lang-switch a:hover { text-decoration: none; }
+.doc ol { padding-left: 1.3em; }
+.doc ol li { margin-bottom: .6em; }
+.doc table { width: 100%; border-collapse: collapse; margin: 16px 0; font-size: .95rem; display: block; overflow-x: auto; }
+.doc th, .doc td { text-align: left; padding: 10px 12px; border-bottom: 1px solid var(--border); }
+.doc th { background: var(--surface-alt); font-weight: 700; }
+@media (max-width: 520px) { .doc table { font-size: .82rem; } .doc th, .doc td { padding: 8px 6px; } }
+.crumbs { font-size: .9rem; color: var(--muted); margin-bottom: 18px; }
+.crumbs a { color: var(--muted); }
+.crumbs span { margin: 0 4px; }
+.uses { display: flex; flex-wrap: wrap; gap: 10px; justify-content: center; margin-top: 32px; }
+.uses a { padding: 8px 16px; border-radius: 999px; background: var(--primary-soft); font-weight: 600; font-size: .95rem; }
+.uses a:hover { text-decoration: none; background: var(--primary); color: #fff; }
 .card { background: var(--surface); border: 1px solid var(--border); border-radius: var(--radius); padding: 24px; }
 .contact-card { display: flex; align-items: center; gap: 18px; flex-wrap: wrap; justify-content: space-between; margin: 24px 0 8px; }
 .contact-card strong { display: block; font-size: 1.1rem; }
